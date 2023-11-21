@@ -379,12 +379,12 @@ figure {
 /* Para moviles */
 @media only screen and (max-width: 768px) {
   .form-header {
-    padding: 50px;
+    padding: 5px;
   }
 
   .form-row {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
   }
   .form-row input[type="text"]
