@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Moshky</title>
+  <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header id="encabezado">
+    
+    <nav id="navbar">
+    
+      <div class="container">
+        <h1 class="logo">Moshky</h1>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#acercademi">Acerca de mi</a></li>
+          <li><a href="#misintereses">Mis intereses</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="acercademi">
+      <div class="container">
+        <h2>Acerca de mi</h2>
+        <div class="contenidoacerca">
+          <div class="acerca-text-1">
+            <p>Bienvenido a mi web</p>
+            <p>Me llamo Viviana soy de Ecuador tengo 26 años me gustan los animales, me considero una persona alegre siempre dispuesta aprender cosas nuevas. Me gustan las series policiales y comer helado. </p>
+          </div>
+          <div class="acerca-imagen-1">
+            <img src="mi foto.jpg" alt="">
+          </div>
+        </div>
+      </div>    
+    </section>
+  </header>
+
+<section id="misintereses">
+  <h2>Mis intereses</h2>
+  <div class="container2">
+     <div class="card">
+      <figure>
+        <img src="series.webp">
+      <div class="contenido">
+        <h3>Series policiales</h3>
+        <p>Las series policial o historia de detectives es una ficción literaria sobre crímenes y delitos</p>
+        <a href="https://www.revistagq.com/noticias/galeria/mejores-series-policiacas">Leer más</a>
+       </figure>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="crecimiento.avif">
+        <div class="contenido">
+          <h3>Crecimiento personal</h3>
+          <p>Mejoran los talentos, el potencial, el trabajo, la conciencia y la capacidad de una persona </p>
+          <a href="https://marianrojas.com/sobre-mi/">Leer más</a>
+        </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="manualidades.jpg">
+          <div class="contenido">
+            <h3>Manualidades</h3>
+            <p>son trabajos efectuados con las manos, con o sin ayuda de herramientas</p>
+            <a href="https://manualidadesplay.com/navidad/">Leer más</a>
+          </figure>
+          </div>
+     </div>
+  </div>
+</section>
+
+<section id="contactos">
+<footer class="form-header">
+  <h1>Contacto</h1>
+  <p><em>¡Esperamos tu consulta!</em></p>
+
+  <form action="" method="get" class="formulario" id="form">
+    <div class="form-row">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" />
+    </div>
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="pepe@gmail.com"
+        required
+      />
+    </div>
+    <div class="form-row">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+    </div>
+    <div class="form-row">
+      <button type="submit" id="submit">Enviar</button>
+    </div>
+   <p class="alertas" id="lertas"></p>
+  </form>
+</footer>
+<script src="script.js"></script>
+
+<div id="redes">
+  <h2>SIGUEME</h2>
+  <ul>
+    <li>Facebook</li>
+    <li>Instagram</li>
+    <li>Tik Tok</li>
+  </ul>
+</div>
+</section>
+</body>
+</html>

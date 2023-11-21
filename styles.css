@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+* {
+ margin: 0; 
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Main Styling */
+html, 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { 
+  font-size: 2rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.75rem;
+} 
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+
+a { text-decoration: none; }
+
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.large { font-size: 1.25rem; }
+
+
+/* Encabezado */
+#encabezado {
+  background: url('showcase.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+}
+
+/* Menu */
+#navbar {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000;
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#navbar a {
+  color: #000;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 16px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Menu responsive*/
+
+@media (max-width: 768px) {
+
+  #navbar {
+    text-align: center;
+  }
+#navbar .logo {
+  float: none;
+}
+
+#navbar ul {
+  float: none;
+  font-size: small;
+}
+
+#navbar ul li {
+  float: none;
+}
+
+}
+/* Acerca de mi */
+#acercademi {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#acercademi h2 {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+.acerca-imagen-1 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.acerca-text-1 {
+  float: right;
+  width: 50%;
+  padding: 120px;
+}
+
+.acerca-imagen-1 {
+  float: right;
+  width: 50%;
+  padding: 120px;
+  height: auto;
+}
+
+/*Dispositivos moviles*/
+
+@media (max-width: 768px) {
+  .acerca-text-1 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size:xx-small;
+  }
+  #encabezado {
+    background: url('showcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250vh;
+  }
+  .acerca-imagen-1 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Mis intereses */
+
+
+#misintereses h2{
+  text-align: center;
+  padding-top: 50px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.container2 {
+  width: 100%;
+  padding: 0em 0.2em 0.2em;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: wrap;
+  max-width: 2500px;
+  max-height: 3000px;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  width: 3%;
+  margin: 1em;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  flex: 1;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20p rgba(0, 0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 18em;
+  border-radius: 6px;
+}
+
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido p {
+  line-height: 1.5;
+  font-size: 1.2em;
+  color: #6a6a6a;
+}
+
+.card .contenido h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em;
+  margin-top: 10px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+  background-color: rgb(207, 148, 38);
+  color: black;
+}
+/*Dispositivos moviles*/
+@media (max-width: 768px) {
+  .container2 {
+    margin: 0;
+    width: 100%;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%; 
+  }
+
+  .card:hover {
+    box-shadow: 5px 5px 20p rgba(0, 0, 0, 0, 0.4);
+    transform: translateY(0);
+  }
+}
+
+
+
+
+ /* ------------- Encabezado Contacto ------------- */
+  
+ footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+/* Campos del Formulario  */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"] 
+.form-row input[type="email"]{
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+.alertas{
+  background-color: black;
+}
+
+/* Para moviles */
+@media only screen and (max-width: 768px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"]
+  .form-row input[type="email"]
+   {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row textarea {
+    width: 250px;
+  }
+  .form-row button {
+    margin-left: 45px;
+    }
+}
+
+/*Redes*/
+
+#redes{
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: black;
+}
+#redes ul{
+  color:white;
+}
+#redes h2{
+  color: crimson;
+}
